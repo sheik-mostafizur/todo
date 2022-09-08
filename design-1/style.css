@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary: #4a4a4a;
+  --active: #00ce6a;
+  --danger: #fa0707;
+  --white: #ffffff;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 400px;
+  min-height: 600px;
+  margin: auto;
+  padding: 1rem;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  position: relative;
+}
+.timer {
+  text-align: center;
+}
+.timer h2 {
+  font-size: 46px;
+  color: var(--primary);
+}
+.timer p {
+  color: var(--primary);
+}
+.add-todo {
+  margin: 1rem 0;
+}
+.add-todo form {
+  display: flex;
+  justify-content: space-between;
+}
+.add-todo input:focus {
+  outline: 2px solid #a9d1ff;
+}
+.add-todo input {
+  width: 273px;
+  height: 40px;
+  background: var(--white);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 43px;
+}
+.add-todo input[type="submit"] {
+  cursor: pointer;
+  width: 90px;
+  height: 40px;
+  font-weight: bold;
+  background: var(--active);
+  color: var(--white);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 52px;
+}
+
+input,
+button,
+li {
+  font-size: 1rem;
+  margin: 8px 0;
+  list-style: none;
+  color: var(--primary);
+  border: none;
+  padding: 0.8rem 1rem;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 61px;
+}
+
+.todos {
+  position: relative;
+}
+#show-todo {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.15);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+#show-todo .content {
+  background-color: var(--white);
+  padding: 1rem;
+  margin-top: 3rem;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+#show-todo .content .close {
+  text-align: end;
+  color: var(--danger);
+  font-size: 1.2rem;
+  border-bottom: 1px solid var(--primary);
+}
+#show-todo .content .close i {
+  cursor: pointer;
+}
+#show-todo .content .time {
+  font-size: 12px;
+  margin: -1rem;
+  margin-top: 5px;
+  padding: 0.5rem 1rem;
+  background-color: #eee;
+}
+.todos li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.todos li span {
+  font-size: 12px;
+}
+.todos li span span {
+  margin-left: 4px;
+}
+.todos li .view,
+.todos li .delete {
+  font-size: 1rem;
+  cursor: pointer;
+}
+.todos li .delete {
+  color: var(--danger);
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Todo App</title>
+  </head>
+  <body>
+    <div id="print"></div>
+    <div class="container">
+      <div class="timer"></div>
+      <div class="add-todo">
+        <form>
+          <input type="text" placeholder="Enter your todo" />
+          <input type="submit" value="Add" />
+        </form>
+      </div>
+      <div id="show-todo">
+        <div class="content">
+          <div class="close"><i class="fa-solid fa-xmark"></i></div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+            consequuntur aliquid minima praesentium cumque quae nulla sunt ad
+            repellendus quod, commodi ea, sit, porro incidunt.
+          </p>
+          <div class="time">
+            <span>Added: 4:17 PM, Sunday, 4 September 2022</span>
+          </div>
+        </div>
+      </div>
+      <ul class="todos"></ul>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
